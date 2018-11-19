@@ -20,10 +20,14 @@ $(function() {
       $this.prop("disabled", true); // Disable submit button until AJAX call is complete to prevent duplicate messages
 
       // Envio de correo con js      
-      Email.send("winstonflores30@gmail.com",
-      email,
-      "Saludos desde web de GitHub",
-      "Prueba realizada desde js",
+      Email.send("admin@iplataformacomercial.com",
+      "info@iplataformacomercial.com",
+      "Cliente solicita creación de cuenta en iPlataformaComercial",
+      "Datos del cliente <br/>"+
+      " - Nombre: " + name + " <br/>" +
+      " - Email: " + email + " <br/>" +
+      " - Celular: " + phone + " <br/>" +
+      " - Mensaje: " + message,
       {
         token: "b3b0afbf-099f-46f8-8972-6393a87881b1",
         callback: function done(message) { 
