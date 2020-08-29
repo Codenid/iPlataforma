@@ -29,7 +29,8 @@ $(function() {
       " - Celular: " + phone + " <br/>" +
       " - Mensaje: " + message,
       {
-        token: "b3b0afbf-099f-46f8-8972-6393a87881b1",
+        token: "4b8bbf7e-c132-4331-85ba-4e5c1b107e9d"
+        //token: "b3b0afbf-099f-46f8-8972-6393a87881b1",//PRD
         callback: function done(message) { 
           // Success message
           $('#success').html("<div class='alert alert-success'>");
